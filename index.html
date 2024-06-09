@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove.bg Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Remove.bg Clone</h1>
+        <div class="upload-section">
+            <input type="file" id="upload" accept="image/*">
+            <button id="uploadButton">Upload Image</button>
+        </div>
+        <div class="image-section">
+            <img id="uploadedImage" src="" alt="Your Image">
+            <img id="resultImage" src="" alt="Result Image">
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <style>
+        /* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.upload-section {
+    margin-bottom: 20px;
+}
+
+.image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+img {
+    max-width: 300px;
+    max-height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    object-fit: contain;
+}
+
+    </style>
+</body>
+</html>
